@@ -1,19 +1,52 @@
 import React, { Component } from 'react'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
+import Projects from "./Projects"
+import Resume from "./Resume"
+import Contactme from "./Contactme"
+import Welcome from "./Welcome"
+
 
 export default class Nav extends Component {
     render() {
         return (
-            <div>
-                 <header>
-                <h4><small>&copy;Anthony Wilde's Portfolio</small></h4>
-                <nav>
-                    <a href="./Welcome.js">Welcome</a>
-                    <a href="./Projects.js">Projects</a>
-                    <a href="./Contactme.js">Contact Me</a>
-                    <a href="./Resume.js">Resume</a>
-                </nav>
-            </header>
-            </div>
+            <Router>
+                <header>
+                    <h4><small>&copy;Anthony Wilde's Portfolio</small></h4>
+                    <nav>
+                        <li>
+                            <Link to="/">Welcome</Link>
+                        </li> 
+                        <li>
+                            <Link to="/Projects">Projects</Link>
+                        </li> 
+                        <li>
+                            <Link to="/Resume">Resume</Link>
+                        </li> 
+                        <li>
+                            <Link to="/Contactme">Contact Me</Link>
+                        </li> 
+                    </nav>
+                    <Switch>
+                        <Route path="/Projects">
+                            <Projects />
+                        </Route>
+                        <Route path="/Resume">
+                            <Resume />
+                        </Route>
+                        <Route path="/Contactme">
+                            <Contactme/>
+                        </Route>
+                        <Route path="/">
+                            <Welcome />
+                        </Route>
+                    </Switch>
+                </header>
+            </Router>
         )
     }
 }
