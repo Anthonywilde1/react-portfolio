@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+/* Nav Bar */
+.header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  display: flex;
+  height: 5vh;
+  width: 50vw;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.nav {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  height: 10vh;
+  width: 49vw;
+  justify-content: space-between;
+  padding-right: 1vw;
+}
+
+.Welcome {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-left: 25vw;
+  padding-right: 25vw;
+}

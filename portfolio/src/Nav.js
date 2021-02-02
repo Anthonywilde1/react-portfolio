@@ -16,8 +16,8 @@ export default class Nav extends Component {
         return (
             <Router>
                 <header class="header">
-                    <h4><small>&copy;Anthony Wilde's Portfolio</small></h4>
-                    <nav>
+                    <h4 class="copyright"><small>&copy;Anthony Wilde's Portfolio</small></h4>
+                    <nav class="nav">
                         <li>
                             <Link to="/">Welcome</Link>
                         </li> 
