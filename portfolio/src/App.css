@@ -36,6 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  overflow-y: scroll;
+}
 /* Nav Bar */
 .header {
   width: 100vw;
@@ -45,6 +49,8 @@
 }
 
 .copyright {
+  position: fixed;
+
   display: flex;
   height: 5vh;
   width: 50vw;
@@ -54,16 +60,20 @@
 }
 
 .nav {
+  position: fixed;
+
   align-items: center;
   text-align: center;
   display: flex;
   height: 10vh;
   width: 49vw;
   justify-content: space-between;
-  padding-right: 1vw;
+  padding-right: 5vw;
+  padding-left: 45vw;
 }
 
 .Welcome {
+  padding-top: 10vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -73,4 +83,64 @@
   text-align: center;
   padding-left: 25vw;
   padding-right: 25vw;
+}
+
+.projects { 
+  padding-top: 10vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-left: 25vw;
+  padding-right: 25vw;
+}
+
+.project1 {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10vh;
+  margin-bottom: 1vh;
+}
+
+.project1 > img {
+  width: 50vw;
+  padding-bottom: 10vh;
+
+}
+
+.project2 {
+  margin-top: 1vh;
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10vh;
+  margin-bottom: 1vh;
+}
+
+.project2 > img {
+  width: 50vw;
+  height: 90%;
+}
+
+.project3 {
+  margin-top: 1vh;
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10vh;
+}
+
+.project3 > img {
+  width: 50vw;
+}
+
+.project3 > p {
+  padding-bottom: 5vh;
 }
