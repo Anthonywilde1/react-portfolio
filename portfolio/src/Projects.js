@@ -7,7 +7,7 @@ import mememarket2 from "./images/Mememarket2.png"
 export default class Projects extends Component {
     render() {
         return (
-            <div>
+            <div class="projects">
                 <h1>Projects</h1>
                 <div class="project1">
                     <h2>Keesy Driving School App</h2>

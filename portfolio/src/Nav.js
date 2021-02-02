@@ -15,7 +15,7 @@ export default class Nav extends Component {
     render() {
         return (
             <Router>
-                <header>
+                <header class="header">
                     <h4><small>&copy;Anthony Wilde's Portfolio</small></h4>
                     <nav>
                         <li>

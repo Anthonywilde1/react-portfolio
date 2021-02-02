@@ -4,7 +4,7 @@ import photo from "./images/2021-02-01-121838.jpg"
 export default class Welcome extends Component {
     render() {
         return (
-            <div>
+            <div class="Welcome">
                
                 <h1>Greetings</h1>
                 <h3>Welcome to my portfolio</h3>
