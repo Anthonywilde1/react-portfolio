@@ -31,6 +31,7 @@ export default class Nav extends Component {
                             <Link to="/Contactme">Contact Me</Link>
                         </li> 
                     </nav>
+                </header>
                     <Switch>
                         <Route path="/Projects">
                             <Projects />
@@ -45,7 +46,6 @@ export default class Nav extends Component {
                             <Welcome />
                         </Route>
                     </Switch>
-                </header>
             </Router>
         )
     }
