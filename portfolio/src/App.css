@@ -50,6 +50,7 @@ body {
   padding-top: 2.5%;
   flex-direction: row;
   position: fixed;
+  font-size: 2em;
 }
 
 .header > h4, nav {
@@ -90,4 +91,73 @@ li {
   font-size: 1.5em;
   flex-flow: wrap;
   display: flex;
+}
+/* add media query for phone tablet version */
+
+.projects {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 25%;
+  align-items: center;
+}
+
+.projects > h1 {
+  font-size: 4em;
+}
+
+.project1, .project2, project3 > a {
+  text-align: center;
+  font-size: 2em;
+}
+
+.project1 > img, .project2 > img {
+  width: 100%;
+}
+
+.project3 {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  font-size: 2em;
+}
+
+.project3 > img {
+  width: 100%;
+}
+
+/* add media query for phones */
+
+.resume {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 25%;
+  align-items: center;
+  font-size: 2em;
+}
+
+.resume  > a {
+  font-size: 2.5em;
+}
+
+.contacts {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 25%;
+  align-items: center;
+  font-size: 2em;
+  text-align: center;
+}
+
+
+
+.contacts > ul > li {
+  padding: 2%;
 }
