@@ -4,6 +4,8 @@ import blackjack from './images/Blackjack.png'
 import mememarket1 from "./images/Mememarket1.png"
 import mememarket2 from "./images/Mememarket2.png"
 
+
+
 export default class Projects extends Component {
     render() {
         return (
@@ -34,11 +36,17 @@ export default class Projects extends Component {
                         Add their memes to their account and buy and sell memes with other users of the site. To do this I also had to have functioning image buckets and payment systems
                         in place. Comments on memes were also implemented. While the idea wasn't the best the overall functionality of my website was something I am still quite proud of.
                     </p>
+                    <div id="slideshow">
+
                     <img src={mememarket1} alt="Meme marketplace 1"/>
                     <img src={mememarket2} alt="Meme marketplace 2"/>
+                    
+                    </div>
                     <p><a href="https://meme-market-6969.herokuapp.com/users">Meme market</a></p>
                 </div>
+            
             </div>
+            
         )
     }
 }
