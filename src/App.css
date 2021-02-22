@@ -38,139 +38,89 @@
 }
 
 body {
-  background-image: url("./images/background.jpg"); 
-  width: 100%;
-  height: 100%;
+  background-image: url("./images/1b456377a9dce67a7dc3630260aa7572.gif");
+  height: 110vh;
+  width: 100vw;
+  flex-direction: row;
 }
 
-.header {
-  background-image: url('./images/bg-nav-bar-e1522125676147.jpg');
-  background-repeat: no-repeat;
+header {
+  background-image: url('./images/download\ \(1\).jpeg');
   background-position: center;
   background-size: cover;
-  display: flex;
-  width: 100%;
-  height: 10%;
-  padding-top: 2.5%;
-  flex-direction: row;
-  position: fixed;
-  font-size: 2em;
-}
-
-.header > h4, nav {
-  display: flex;
-  width: 50%;
-  justify-content: center;
-}
-
-nav {
-  padding-top: 1%;
-  justify-content: space-between;
+  align-items: center;
   align-content: center;
-  padding-right: 1%;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  display: flex;
+  height: 20vh;
+  width: 100vw;
+  position: fixed;
 }
 
-li {
+header > h4 {
+  justify-content: center;
+  width: 50vw;
+  display: flex;
+  color: white;
+}
+
+header > nav { 
+  justify-content: space-around;
+  width: 50vw;
+  display: flex;
+}
+
+nav > li {
   list-style: none;
 }
 
+nav > li > a:link {
+  color: white;
+}
+
+nav > li > a:visited {
+  color: white;
+
+}
+
 .Welcome {
-  padding-top: 10%;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  padding-left: 25%;
-  align-items: center;
-}
+  padding-top: 20vh;
+  width: 100vw;
+  height: 90vh;
+  text-align: center;
+  color: hotpink;
+  text-shadow: 2px 2px black;
 
-.Welcome > h1 {
-  font-size: 3em;
-}
-
-.Welcome > h3 {
-  font-size: 2em;
 }
 
 .Welcome > p {
-  font-size: 1.5em;
-  flex-flow: wrap;
-  display: flex;
-}
-/* add media query for phone tablet version */
-
-.projects {
-  padding-top: 10%;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  padding-left: 25%;
-  align-items: center;
+  padding-left: 12.5vw;
+  width: 75vw;
+  padding-right: 12.5vw;
 }
 
-.projects > h1 {
-  font-size: 4em;
+.Welcome > img {
+  width: 75vw;
+  height: 75vh;
+  padding-left: 12.5vw;
+  padding-right: 12.5vw;
 }
 
-.project1, .project2, project3 > a {
-  text-align: center;
-  font-size: 2em;
+.Welcome > p > a:visited {
+  color:hotpink;
 }
 
-.project1 > img, .project2 > img {
-  width: 100%;
+.Welcome> p > a:link {
+  color: white;
 }
 
-.project3 {
-  padding-top: 10%;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  font-size: 2em;
-}
-
-.each-slide {
-  width: 100%;
-}
-
-
-#slideshow > div { 
-  position: absolute; 
-  top: 10px; 
-  left: 10px; 
-  right: 10px; 
-  bottom: 10px; 
-}
-
-/* add media query for phones */
-
-.resume {
-  padding-top: 10%;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  padding-left: 25%;
-  align-items: center;
-  font-size: 2em;
-}
-
-.resume  > a {
-  font-size: 2.5em;
-}
-
-.contacts {
-  padding-top: 10%;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  padding-left: 25%;
-  align-items: center;
-  font-size: 2em;
-  text-align: center;
-}
-
-
-
-.contacts > ul > li {
-  padding: 2%;
+@media only screen and (max-width: 600px) {
+  header > nav {
+    flex-wrap: wrap;
+  }
+  .Welcome > img {
+    height: 60vh;
+  }
 }
