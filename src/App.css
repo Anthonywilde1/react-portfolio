@@ -2,7 +2,8 @@
 body {
   background-image: url("./images/1b456377a9dce67a7dc3630260aa7572.gif");
   background-repeat: no-repeat;
-  height: 110vh;
+  background-size: cover;
+  height: 100vh;
   width: 100vw;
   flex-direction: row;
 }
@@ -20,6 +21,11 @@ header {
   height: 20vh;
   width: 100vw;
   position: fixed;
+}
+@media only screen and (max-width: 600px) {
+  header {
+    width: 105vw;
+  }
 }
 
 header > h4 {
@@ -51,11 +57,10 @@ nav > li > a:visited {
 .Welcome {
   padding-top: 20vh;
   width: 100vw;
-  height: 85vh;
+  height: 80vh;
   text-align: center;
   color: hotpink;
   text-shadow: 2px 2px black;
-  padding-bottom: 2.5vh;
 }
 
 .Welcome > p {
@@ -241,6 +246,7 @@ nav > li > a:visited {
 
   .projects > .project1{
     height: 100vh;
+    width: 100vw;
   }
 
   .projects > .project1 > img {
@@ -251,6 +257,8 @@ nav > li > a:visited {
 
   .projects > .project2 {
     height: 100vh;
+    width: 100vw;
+
   }
 
   .projects > .project2 > img {
@@ -262,6 +270,57 @@ nav > li > a:visited {
 
   .projects > .project3 {
     height: 100vh;
+    width: 100vw;
+
   }
 
+}
+
+.resume {
+  width: 100vw;
+  height: 80vh;
+  padding-top: 20vh;
+  text-align: center;
+}
+
+.resume > h2 {
+  padding-top: 10vh;
+  color: hotpink;
+  text-shadow: 2px 2px black;
+}
+
+.resume > a:visited {
+    color: white;
+  }
+
+.resume > a:link {
+  color: white;
+}
+
+.contacts {
+  width: 100vw;
+  height: 80vh;
+  padding-top: 20vh;
+  text-align: center;
+  color: hotpink;
+  text-shadow: 2px 2px black;
+  font-size: x-large;
+}
+
+.contacts > ul {
+  width: 75vw;
+  padding-right: 12.5vw;
+  padding-left: 12.5vw;
+}
+
+.contacts > ul > li {
+  list-style: none;
+}
+
+.contacts > ul > li > a:visited {
+  color: white;
+}
+
+.contacts > ul> li > a:link {
+  color: white;
 }
